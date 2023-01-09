@@ -1,0 +1,33 @@
+package Loops.Pattern;
+/*
+ *       1
+ *      2  2
+ *     3  3  3
+ *    4  4  4  4
+ *     3  3  3
+ *      2  2
+ *        1
+ */
+public class Pattern20 {
+    public static void main(String[] args) {
+        for(int row=1; row<=4; row++) {
+            for(int space=4-row; space>=0; space--){
+                System.out.print(" ");
+            }
+            for(int col=1; col<=row; col++){
+                System.out.print(row+" ");
+            }
+            System.out.println();
+        }
+        for(int row=1; row<=3; row++){
+            for(int space=0; space<=row; space++){
+                System.out.print(" ");
+            }
+            for(int col=1; col<=4-row; col++){
+                System.out.print(4-row+" ");
+            }
+            System.out.println();
+        }
+    }
+}
+

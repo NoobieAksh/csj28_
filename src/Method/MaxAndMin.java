@@ -10,18 +10,18 @@ public class MaxAndMin {
         int number2 = sc.nextInt();
         int number3 = sc.nextInt();
         MaxAndMin ref = new MaxAndMin();
-        System.out.println("max:");
+        System.out.print("max: ");
         ref.maximum(number1,number2,number3);
-        System.out.println("min:");
+        System.out.print("min: ");
         ref.minimum(number1,number2,number3);
 
     }
 
     void maximum(int number1, int number2,int number3){
-        if(number1>number2 && number1>number3)
+        if(number1>=number2 && number1>=number3)
         {
             System.out.println(number1);
-        } else if (number2>number1 && number2>number3) {
+        } else if (number2>=number1 && number2>=number3) {
             System.out.println(number2);
         } else {
             System.out.println(number3);
@@ -29,10 +29,10 @@ public class MaxAndMin {
     }
 
     void minimum(int number1, int number2,int number3){
-        if(number1<number2 && number1<number3)
+        if(number1<=number2 && number1<=number3)
         {
             System.out.println(number1);
-        } else if (number2<number1 && number2<number3) {
+        } else if (number2<=number1 && number2<=number3) {
             System.out.println(number2);
         } else {
             System.out.println(number3);
